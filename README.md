@@ -42,7 +42,14 @@ PowerShell.exe -NoExit -File "C:\Users\username\git\windows-daily-software-upgra
 
 Verify the command is correct before continuing.
 
-## Level 3 - Automate the Script
+## Level 3 - Schedule the Script Manually (Option 1)
+
+Two options:
+
+1. Do this part manually to explore scheduled tasks OR
+1. Automate this also (see Level 4)
+
+If you choose the manual option (use your path below!):
 
 1. Open Task Scheduler by hitting Windows Start key, and typing Task Scheduler until it appears. Click to open.
 1. In Actions Pane, click 'Create Basic Task'.
@@ -51,13 +58,23 @@ Verify the command is correct before continuing.
 1. Set Start time, e.g., 8:00:00 AM, click 'Next'.
 1. 'Start a program' is selected, so click 'Next'.
 1. In Program/script:, type ```PowerShell.exe```.
-1. In Add aruments (optional), type ```-NoExit -File "C:\Users\username\git\windows-daily-software-upgrade\daily.ps1"```
+1. In Add aruments (optional), type ```-NoExit -File "C:\<replace with your path>\windows-daily-software-upgrade\daily.ps1"```
 1. Click 'Next'.
 1. Click 'Finish'.
 
-## View / Edit / Run Scheduled Task
+## Level 4 - Script the Scheduling (Option 2)
 
-- To view or edit the scheduled task, click "Task Scheduler Library" and under Name, find the task and double-click to open.
+Script the procedure above. Review and edit the PowerShell script named [create-scheduled-task.ps1](.\create-scheduled-task.ps1) as desired.
+
+To create the scheduled task, open PowerShell as an Adminstrator in this folder and run:
+
+```PowerShell
+.\create-scheduled-task.ps1
+```
+
+## Recommended: Explore Scheduled Tasks
+
+- Open Task Scheduler, click "Task Scheduler Library" and under Name, find the task and double-click to open.
 
 - To test, under 'Selected Item', click 'Run'.
 
