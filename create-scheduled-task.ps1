@@ -18,5 +18,5 @@ $settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Minu
 Register-ScheduledTask -Action $action -TaskName $taskName -Trigger $trigger -Settings $settings 
 
 Write-Host ""
-Write-Host "Success! Hit CTRL-C to close this window."
+Write-Host "Success! Hit ALT+SPACE C to close this window."
 cmd /c Pause | out-null
