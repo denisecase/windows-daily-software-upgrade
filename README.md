@@ -1,5 +1,8 @@
 # Windows Daily Software Upgrade
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 > Update Windows software daily with PowerShell, Chocolatey, and Task Scheduler
 
 Developers work hard so we can be lazy (about the boring tasks). :)
@@ -8,6 +11,13 @@ Developers work hard so we can be lazy (about the boring tasks). :)
 
 - [Web Page](https://denisecase.github.io/windows-daily-software-upgrade/)
 - [Source](https://github.com/denisecase/windows-daily-software-upgrade)
+
+## Recommended Prerequisites
+
+- [Windows Setup for Developers](https://github.com/denisecase/windows-setup)
+- [Windows File Management](https://github.com/denisecase/windows-file-management)
+- [Basic Tools for Web Development](https://github.com/denisecase/basic-tools-for-webdev)
+- [Git Started on Windows](https://github.com/denisecase/git-started-windows)
 
 ## Level 1 - Keeping Software Current Manually
 
@@ -78,24 +88,8 @@ To create the scheduled task, open PowerShell as an Adminstrator in this folder 
 
 - To test, under 'Selected Item', click 'Run'.
 
-## Recommended Prerequisites
-
-Windows Setup for Developers
-
-- <https://github.com/denisecase/windows-setup>
-
-Windows File Management with PowerShell
-
-- <https://github.com/denisecase/windows-file-management>
-
-Basic Tools for Web Development
-
-- <https://github.com/denisecase/basic-tools-for-webdev>
-
-Getting started with Git on Windows
-
-- <https://github.com/denisecase/git-started-windows>
+You can also access the scheduled task to delete it, change the scheduled time, or make other modifications.
 
 ## See Also
 
-- [List of repos that illustrate concepts in web apps](https://profcase.github.io/web-apps-list/)
+This repo is part of the [Windows Developer List: Guides to get Windows 10 ready for Software Development](https://github.com/denisecase/windows-setup).
