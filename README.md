@@ -92,4 +92,5 @@ You can also access the scheduled task to delete it, change the scheduled time, 
 
 ## See Also
 
-This repo is part of the [Windows Developer List: Guides to get Windows 10 ready for Software Development](https://github.com/denisecase/windows-setup).
+- [Setting Up for Professional Software Development](https://github.com/denisecase/pro-dev-list)
+
