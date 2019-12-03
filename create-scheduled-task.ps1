@@ -12,7 +12,7 @@ if ($exists) {
   Unregister-ScheduledTask -TaskName $taskName -Confirm:$false
 }
 Write-Host "Create scheduled task $taskName"
-$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument $argument
+$action = New-ScheduledTaskAction -RunElevated -Execute "powershell.exe" -Argument $argument
 $trigger = New-ScheduledTaskTrigger -Daily -At 11:55am
 $settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Minutes 60)
 Register-ScheduledTask -Action $action -TaskName $taskName -Trigger $trigger -Settings $settings 
