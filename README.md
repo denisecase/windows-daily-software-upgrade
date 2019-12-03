@@ -74,7 +74,7 @@ If you choose the manual option (use your path below!):
 
 ## Level 4 - Script the Scheduling (Option 2)
 
-Script the procedure above. Review and edit the PowerShell script named [create-scheduled-task.ps1](.\create-scheduled-task.ps1) as desired.
+Script the procedure above. Review and edit the PowerShell script named [create-scheduled-task.ps1](create-scheduled-task.ps1) as desired.
 
 To create the scheduled task, open PowerShell as an Adminstrator in this folder and run:
 
