@@ -5,7 +5,6 @@
 $taskName = "_ChocoUpgrade"
 $pathToFile = $PSScriptRoot +  "\daily.ps1"
 $argument = '-File "' + $pathToFile + '"'
-$principal = New-ScheduledTaskPrincipal -UserId SYSTEM -LogonType ServiceAccount -RunLevel Highest
 
 $exists = Get-ScheduledTask | Where-Object { $_.TaskName -like $taskName }
 if ($exists) {
@@ -14,9 +13,9 @@ if ($exists) {
 }
 Write-Host "Create scheduled task $taskName"
 $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument $argument
-$trigger = New-ScheduledTaskTrigger -Daily -At 12:55pm
+$trigger = New-ScheduledTaskTrigger -Daily -At 10:45am
 $settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Minutes 60)
-Register-ScheduledTask -Action $action -Principal $principal -TaskName $taskName -Trigger $trigger -Settings $settings 
+Register-ScheduledTask -Action $action -TaskName $taskName -Trigger $trigger -Settings $settings 
 
 Write-Host ""
 Write-Host "Success! Hit ALT+SPACE C to close this window."
