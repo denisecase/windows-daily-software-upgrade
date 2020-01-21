@@ -82,6 +82,13 @@ To create the scheduled task, open PowerShell as an Adminstrator in this folder 
 .\create-scheduled-task.ps1
 ```
 
+After the scheduled task is created, we must edit two settings to enable it to run the choco update as an administrator. 
+
+Follow the instructions shown in [this article](https://www.windowstricks.in/2018/08/how-to-run-the-powershell-script-in-scheduled-task-with-run-as-administrator.html). Open Task Scheduler and highlight the new task. Click properties, then:
+
+1. On Actions tab / Arguments, insert **-ExecutionPolicy Bypass** before -File.
+1. On General tab / check **Run with highest privileges**.
+
 ## Recommended: Explore Scheduled Tasks
 
 - Open Task Scheduler, click "Task Scheduler Library" and under Name, find the task and double-click to open.
