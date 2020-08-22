@@ -11,3 +11,6 @@ refreshenv
 Write-Host ""
 Read-Host -Prompt "Press Enter to exit"
 Stop-Transcript
+Write-Host ""
+Write-Host "Hit Alt+Space c to close this window."
+Write-Host ""
