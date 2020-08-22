@@ -30,7 +30,7 @@ refreshenv
 
 ## Level 2 - Don't Type, Script
 
-Avoid typing (as easy as it is), by creating a PowerShell script named [daily.ps1](.\daily.ps1).
+Avoid typing (as easy as it is), by creating a PowerShell script named [daily.ps1](./daily.ps1).
 
 Clone (or fork and clone) this repo down to your local machine. Open a PowerShell as Admin in this folder and run:
 
