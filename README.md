@@ -70,13 +70,13 @@ Be sure to use your path in the arguments below:
 1. Click 'Next'.
 1. Click 'Finish'.
 
-## Recommended: Explore Scheduled Tasks
+## Level 4 - Explore Scheduled Tasks
 
 - Open Task Scheduler, click "Task Scheduler Library" and under Name, find the task and double-click to open.
+- Check the option "Run with highest privileges" and click OK.
+- With the task still highlighted, under 'Selected Item' in the lower right, click 'Run'.
 
-- To test, under 'Selected Item', click 'Run'.
-
-You can also access the scheduled task to delete it, change the scheduled time, or make other modifications.
+You can access the scheduled task to delete it, change the scheduled time, or make other modifications.
 
 ## See Also
 
