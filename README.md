@@ -38,7 +38,7 @@ Clone (or fork and clone) this repo down to your local machine. Open a PowerShel
 .\daily.ps1
 ```
 
-Alternatively, create a DOS command to run PowerShell and call the script from anywhere. Open a Windows Command Window as Administrator as in this folder and run:
+Alternatively, create a DOS command to run PowerShell and call the script from anywhere. Open a Windows Command Window as Administrator (Start key / CMD / click on run as Administrator) in this folder and run:
 
 ```DOS
 PowerShell -File ".\daily.ps1"
@@ -47,7 +47,7 @@ PowerShell -File ".\daily.ps1"
 Now use Windows Explorer to get the full path to your script and test the command. For example (replace with your path):
 
 ```DOS
-PowerShell.exe -NoExit -File "C:\Users\username\git\windows-daily-software-upgrade\daily.ps1"
+PowerShell.exe -NoExit -File "C:\Users\dcase\Documents\denisecase\windows-daily-software-upgrade\daily.ps1"
 ```
 
 Verify the command is correct before continuing.
