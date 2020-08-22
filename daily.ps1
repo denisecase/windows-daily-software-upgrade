@@ -9,6 +9,5 @@ choco upgrade all -y
 refreshenv
 
 Write-Host ""
-Write-Host "Hit ALT+SPACE C to close this window."
-cmd /c Pause | out-null
+Read-Host -Prompt "Press Enter to exit"
 Stop-Transcript
